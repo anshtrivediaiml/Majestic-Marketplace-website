@@ -1,4 +1,5 @@
-//The form for giving the products details and description
+//The form for giving the products details and description 
+//Also the new ads will be stored from this page itself , that is the api endpoint for /edit or for /newpage is rendered from this component itself
 'use client';
 import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
