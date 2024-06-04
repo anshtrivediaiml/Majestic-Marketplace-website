@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth"
-import {authOptions} from '@/utils/authOptions';
+import {authOptions} from '../../../../utils/authOptions';
 import ImageKit from "imagekit"
 
 export const GET = async ()=>{

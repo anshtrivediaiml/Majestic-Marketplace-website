@@ -1,18 +1,18 @@
 'use server'
 import React from 'react'
-import {connect} from '@/libs/helpers'; 
-import { AdModel } from '@/models/Ad';
-import UploadThumbnail from '@/components/UploadThumbnail';
-import UploadView from '@/components/UploadView';
-import Gallery from '@/components/Gallery';
-import {authOptions} from '@/utils/authOptions';
+import { connect } from '../../../../libs/helpers';
+import { AdModel } from '../../../models/Ad';
+import UploadThumbnail from '../../../components/UploadThumbnail';
+import UploadView from '../../../components/UploadView';
+import Gallery from '../../../components/Gallery';
+import {authOptions} from '../../../utils/authOptions';
 import { getServerSession } from 'next-auth';
-import LocationMap from '@/components/LocationMap';
+import LocationMap from '../../../components/LocationMap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft, faArrowAltCircleUp, faDeleteLeft, faPencil, faTrash } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { Location } from '@/components/LocationPicker';
-import DeleteButton from '@/components/DeleteButton';
+import { Location } from '../../../components/LocationPicker';
+import DeleteButton from '../../../components/DeleteButton';
 
 
 type Props={

@@ -6,7 +6,7 @@ import { faPlus, faRectangleAd, faRightFromBracket } from '@fortawesome/free-sol
 import { signIn,signOut } from 'next-auth/react'
 import { Session, getServerSession } from 'next-auth'
 import Image from 'next/image'
-import {authOptions} from '@/utils/authOptions';
+import {authOptions} from '../utils/authOptions';
 export default function Header({session}:{session:Session | null}) {
 
   const [showDropdown,setShowDropdown]= useState(false);

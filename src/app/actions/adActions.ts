@@ -1,11 +1,11 @@
 "use server";
 //We will save the ad data to the database
 //using mongoDB and mongoose for data modelling
-import { AdModel } from "@/models/Ad";
+import { AdModel } from "../../models/Ad";
 import mongoose from "mongoose";
-import {authOptions} from '@/utils/authOptions';
+import {authOptions} from '../../utils/authOptions';
 import { getServerSession } from "next-auth";
-import {connect} from "@/libs/helpers"; //importing the connect function from helpers.ts
+import { connect } from "../../../libs/helpers";//importing the connect function from helpers.ts
 import { revalidatePath } from "next/cache";
 
 export async function createAd(formData: FormData) {

@@ -6,7 +6,7 @@ import { Ad } from "../models/Ad";
 import AdItem from "@/components/AdItem";
 import "./globals.css";
 import SearchForm from "@/components/SearchForm";
-import { defaultRadius } from "../libs/helpers";
+import { defaultRadius } from "../../libs/helpers";
 import Loading from "@/components/Loading";
 export default function Home() {
 

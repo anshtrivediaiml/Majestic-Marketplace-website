@@ -1,9 +1,9 @@
 //used for fetching data from the database and also for implementing search functionality and filtering
-import {connect} from '@/libs/helpers'
-import { AdModel,Ad } from '@/models/Ad';
+import {connect} from '../../../../libs/helpers'
+import { AdModel,Ad } from '../../../models/Ad';
 import { FilterQuery, PipelineStage } from 'mongoose';
 import { getServerSession } from 'next-auth';
-import {authOptions} from '@/utils/authOptions';
+import {authOptions} from '../../../utils/authOptions';
 export async function GET(req: Request, res: Response){
  await connect();
  const url= new URL(req.url);
