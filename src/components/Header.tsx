@@ -64,12 +64,12 @@ export default function Header({session}:{session:Session | null}) {
       </>
       )  
         }
-       
-        </div>
+       </div>
         </>
+      
       )}
-        </nav>
-        
+
+        </nav>  
     </header>
   )
 }
