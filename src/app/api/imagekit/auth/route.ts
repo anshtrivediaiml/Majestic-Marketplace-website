@@ -1,3 +1,7 @@
+//This file uses the next/auth function created by us to create a user sessionn and checking that the user is authenticated or not.
+//This file is created as a api route for storage of images of different qualities and dimensions in the imagekit server.
+
+
 import { getServerSession } from "next-auth"
 import {authOptions} from '../../../../utils/authOptions';
 import ImageKit from "imagekit"

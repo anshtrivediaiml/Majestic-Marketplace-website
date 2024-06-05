@@ -1,3 +1,4 @@
+//The search form on the left side of the landing page  is available because of this component as it is rendered directly in the app/page.tsx for search operations in the marketplace and enabling location,price and categorical filtering of ads.
 import React,{use, useEffect, useRef,useState} from 'react'
 import { faStore } from '@fortawesome/free-solid-svg-icons'
 import LabelRadioButton from './LabelRadioButton'
@@ -13,11 +14,11 @@ type Props={
 export default function SearchForm({action}:Props) {
     
     const [radius,setRadius]= useState<number | null> (defaultRadius)
-
+ //The radius state variable is made so that whenver the radius of circle in the google maps changes we can filter our ads and retrieve the ads within the radius of the circle as in the map.
     const [center,setCenter]= useState<Location|null>(null)
-    
+    //Same is with the center that when the center of the circle on the google maps changes we can filter our ads and retrieve the ads within the respective center of the circle as in the map. All the different adjustment are done in the distance picker component rendered in the search form.
     const [prevCenter,setPrevCenter]= useState<Location | null>(null)
-    const formRef=useRef<HTMLFormElement | null>(null);
+    const formRef=useRef<HTMLFormElement | null>(null); 
 
    useEffect(()=>{
         if(center && !prevCenter){
@@ -29,7 +30,6 @@ export default function SearchForm({action}:Props) {
   return (
     <form  ref={formRef}
     action={action}
-    // bg-white to bg-gradient
     className="bg-gradient-to-br from-neutral-900 to-slate-800 p-4 grow w-1/6  ">
 
       <input className='bg-gray-900 mb-1
