@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft, faArrowAltCircleUp, faDeleteLeft, faPencil, faTrash } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { Location } from '../../../components/LocationPicker';
-import DeleteButton from '../../../../../DeleteButton';
+import DeleteButton from '../../../components/DeleteButton';
 
 
 type Props={
